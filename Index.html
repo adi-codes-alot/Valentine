@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- First Screen -->
+  <div class="card" id="questionCard">
+    <h1>Will you be my Valentine? 💖</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes 💕</button>
+      <button id="noBtn">No 😐</button>
+    </div>
+  </div>
+
+  <!-- Second Screen -->
+  <div class="card hidden" id="yesCard">
+    <h1>🥹💘</h1>
+    <p class="valentine-text">
+      Okay wow… you really said yes.<br><br>
+      From random smiles to late-night talks,<br>
+      I’m honestly so glad it’s <b>you</b>.<br><br>
+      Hi Valentine 💕  
+      You just made my whole day.
+    </p>
+  </div>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY"); // 🔑 replace
+    })();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
